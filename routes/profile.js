@@ -2,4 +2,6 @@ import express from 'express'
 
 const router = express.Router();
 
-//test
+router.get('/test', (_, res) => {
+    res.send("This is a test")
+})
