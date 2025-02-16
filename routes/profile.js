@@ -14,6 +14,6 @@ router.post('/signup', (req, _) => {
     res.send("Validated stuff")
 })
 
-// router.post('/login', (req, _) => {
-//     res.send("Successful login")
-// })
+router.post('/login', (req, _) => {
+    res.send("Successful login")
+})
