@@ -1,19 +1,31 @@
 import express from 'express'
+import {Profile} from '../models/profile.js'
 
 const router = express.Router();
 
-router.get('/test', (_, res) => {
-    res.send("This is a test")
+// 'profile' will be in the url
+
+
+router.get('/' , async (_, res) => { // We are not using the res argument so we let others know by putting underscore
+    try {
+        const profile = await Profile.find();
+        res.json(profile)
+    } catch(err) {
+        console.log(`There is an error: ${err}`)
+    }
 })
 
-router.get('/profile', (_, res) => {
-    res.send("This is your profile"); // This message is a placeholder
+router.patch('/', (req, res) => { // The req will contain the changes that we are requesting
+    res.json('patch request is now working')
 })
 
-router.post('/signup', (req, _) => {
-    res.send("Validated stuff")
+router.post('/', (req, res) => {
+    res.json('post request is working')
 })
 
-router.post('/login', (req, _) => {
-    res.send("Successful login")
+router.delete('/:profileId', (req, res) => { // The underscore is to signify that the default argument is being passed but not being utilized
+    res.json(`${req.params.profileId} successfully deleted!`)
 })
+
+
+export const profiles = router;

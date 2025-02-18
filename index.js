@@ -1,8 +1,11 @@
 import express from "express"
+import { profiles } from "./routes/profile.js";
 
 const app = express();
 
 app.use(express.json());
+
+app.use('/api/profile', profiles)
 
 app.get('/test', (_, res) => {
     res.send(`This works properly`)
