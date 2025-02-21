@@ -4,6 +4,7 @@ import {Profile} from '../models/profile.js'
 const router = express.Router();
 
 // 'profile' will be in the url
+//
 
 
 router.get('/' , async (_, res) => { // We are not using the res argument so we let others know by putting underscore

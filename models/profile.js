@@ -14,27 +14,12 @@ const ProfileSchema = new Schema({ // first argument is the document that we are
         type: String,
         required: true
     },
-    location: {
+    about: {
+        type: String
+    },
+    username: {
         type: String,
         required: true
-    },
-    phone: {
-        type: String
-    },
-    about: {
-
-    },
-    projects: {
-        type: String
-    },
-    work: {
-        type: String
-    },
-    skills: {
-        type: String
-    },
-    education: {
-        type: String
     }
 }, {
     timestamps: true
