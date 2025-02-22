@@ -17,10 +17,19 @@ const ProfileSchema = new Schema({ // first argument is the document that we are
     about: {
         type: String
     },
-    username: {
-        type: String,
-        required: true
+    work: {
+        type: String
+    },
+    portfolio: {
+        type: String
+    },
+    education: {
+        type: String
+    },
+    skills: {
+        type: String
     }
+
 }, {
     timestamps: true
 }) // Second argument is extra options
