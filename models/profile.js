@@ -28,6 +28,9 @@ const ProfileSchema = new Schema({ // first argument is the document that we are
     },
     skills: {
         type: String
+    },
+    phone: {
+        type: String
     }
 
 }, {
