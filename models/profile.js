@@ -30,7 +30,8 @@ const ProfileSchema = new Schema({ // first argument is the document that we are
         type: String
     },
     phone: {
-        type: String
+        type: String,
+        required: true
     }
 
 }, {
