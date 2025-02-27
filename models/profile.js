@@ -32,6 +32,9 @@ const ProfileSchema = new Schema({ // first argument is the document that we are
     phone: {
         type: String,
         required: true
+    },
+    accomplishments: {
+        type: String
     }
 
 }, {
