@@ -17,7 +17,7 @@ const ProfileSchema = new Schema({ // first argument is the document that we are
     about: {
         type: String
     },
-    work: {
+    work_history: {
         type: String
     },
     portfolio: {
@@ -35,7 +35,8 @@ const ProfileSchema = new Schema({ // first argument is the document that we are
     },
     accomplishments: {
         type: String
-    }
+    },
+
 
 }, {
     timestamps: true
