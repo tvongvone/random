@@ -25,7 +25,7 @@ router.post('/', (req, res) => {
 })
 
 router.delete('/:profileId', (req, res) => { // The underscore is to signify that the default argument is being passed but not being utilized
-    res.json(`${req.params.profileId} successfully deleted!`)
+    res.json(`${req.params.profileId} was successfully deleted!`)
 })
 
 
