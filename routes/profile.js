@@ -17,7 +17,7 @@ router.get('/' , async (_, res) => { // We are not using the res argument so we 
 })
 
 router.patch('/', (req, res) => { // The req will contain the changes that we are requesting
-    res.json('patch request is now working')
+    res.json('This is patch request')
 })
 
 router.post('/', (req, res) => {
